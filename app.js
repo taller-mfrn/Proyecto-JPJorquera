@@ -10,7 +10,7 @@ fastify.get('/', (request, reply) => {
     reply.send({ hello: 'world' })
   })
 
-fastify.get('/world/:id', async (req, reply) => {
+fastify.get('/city/:id', async (req, reply) => {
     console.log(req.params);
     const connection = await fastify.mysql.getConnection()
     const [rows, fields] = await connection.query(
@@ -20,7 +20,7 @@ fastify.get('/world/:id', async (req, reply) => {
   return rows[0]
 })
 
-fastify.get('/world/', async (req, reply) => {
+fastify.get('/city/', async (req, reply) => {
     const connection = await fastify.mysql.getConnection()
     const [rows, fields] = await connection.query(
         `SELECT * FROM world.city LIMIT 20`
