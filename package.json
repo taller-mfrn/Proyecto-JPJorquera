@@ -1,0 +1,24 @@
+{
+  "name": "nodetest",
+  "version": "1.0.0",
+  "description": "Paquete para tratar de correr pruebas basicas de node",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "keywords": [
+    "test",
+    "taller",
+    "libre",
+    "stack",
+    "node",
+    "etc"
+  ],
+  "author": "Juan Pablo Jorquera",
+  "license": "MIT",
+  "dependencies": {
+    "fastify": "^2.3.0",
+    "fastify-mysql": "^0.2.0"
+  }
+}
